@@ -4,6 +4,7 @@ from script.deploy import INITIAL_SUPPLY
 
 RANDOM = boa.env.generate_address("non-owner")
 
+
 def test_token_supply(snek_token):
     assert snek_token.totalSupply() == INITIAL_SUPPLY
 
