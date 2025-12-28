@@ -54,4 +54,4 @@ def super_mint():
     # self.totalSupply += amount
     amount: uint256 = as_wei_value(100, "ether")
     erc20.balanceOf[msg.sender] = erc20.balanceOf[msg.sender] + amount
-    log IERC20.Transfer(empty(address), msg.sender, amount)
+    # log IERC20.Transfer(empty(address), msg.sender, amount)
